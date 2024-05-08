@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent-a-Car</title>
+</head>
+<body>
+    <!-- Header -->
+    <h1>Anthony's Rent-a-Car</h1>
+    <h4>RI's beginning stages of a rental car website!</h4>
+    <hr>
+    
+    <!-- Availability Section -->
+    <h4>Availability:</h4>
+    <div id="carStatus">
+        <p style="color: crimson">Not Available</p>
+    </div>
+    
+    <!-- Rent Car Form -->
+    <form onsubmit="rentCar()">
+        <label for="selectVehicleMake">Select Car Make:</label>
+        <select id="selectVehicleMake" onchange="updateModels()">
+            <option value="Toyota">Toyota</option>
+            <option value="Ford">Ford</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Honda">Honda</option>
+            <option value="Hyundai">Hyundai</option>
+        </select><br>
+     
+        <label for="selectVehicleModel">Select Car Model:</label>
+        <select id="selectVehicleModel">
+            <!-- Models will be dynamically populated based on the selected make -->
+        </select><br>
+     
+        <button type="submit">Submit</button>
+    </form>
+    <hr>
+    
+    <!-- Status Section -->
+    <h4>Status:</h4>
+    <div id="status"></div>
+
+    <!-- Sign In Form -->
+    <p>Sign in:</p>
+    <form onsubmit="login()">
+        <label for="">Username:</label>
+        <input type="text" id="username"> 
+        
+        <label for="">Password:</label>
+        <input type="password" id="password">
+       
+        <input type="submit" value="Login">
+    </form>
+
+    <!-- Logout Button -->
+    <button id="logoutBtn" onclick="logout()">Logout</button>
+
+    <hr>
+     
+    <!-- New User Form -->
+    <h4>New here? Create a new account!</h4>
+     
+    <form id="newUserForm" onsubmit="createNewUser(event)">
+        
+        <label for="newFirstName">New First Name:</label>
+        <input type="text" id="newFirstName"><br>
+        
+        <label for="newLastName">New Last Name:</label>
+        <input type="text" id="newLastName"><br>
+
+        <label for="newUserName">New Username:</label>
+        <input type="text" id="newUserName"><br>
+        
+        <label for="newPassword">New Password:</label>
+        <input type="password" id="newPassword"><br>
+
+        <button type="submit">Create Account</button>
+
+    </form>
+    <hr>
+
+    <!-- JavaScript file -->
+    <script src="rentalcar002.js"></script>
+</body>
+</html>
