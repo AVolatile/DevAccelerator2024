@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #5c5c5c;
+  display: flex; /* Enable flexbox on body */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height to center vertically */
+  color: #ffffff; /* Change the color of all text in the body */
+}
+
+h1, h2 {
+  color: #00aaf8; /* Specific color for headings */
+}
+
+.container {
+  display: flex; /* Enable flexbox on container */
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+}
+
+.room, .booking-form {
+  background-color: #444444;
+  padding: 20px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%; /* Full width to ensure content is centered */
+  max-width: 400px; /* Limit the maximum width */
+  display: flex; /* Enable flexbox on room and booking-form */
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+  color: #ffffff; /* Change the color of all text in these elements */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 500px;
+  cursor: pointer;
+  margin-top: 10px; /* Add margin to separate from other elements */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.booking-form p:last-of-type {
+  color: #ffffff; /* Green color for success message */
+  font-weight: bold;
+}
